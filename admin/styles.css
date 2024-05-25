@@ -1,0 +1,146 @@
+/* 通用样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #ADD8E6, #4b0082, #ADD8E6);
+    background-size: 600% 600%;
+    color: white;
+    animation: backgroundFlow 15s ease infinite;
+}
+
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 登录容器样式 */
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#login-container h1 {
+    font-size: 2.5em;
+}
+
+#login-container input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#login-container button {
+    padding: 10px 20px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-container button:hover {
+    background-color: #6a0dad;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* 管理页面样式 */
+header {
+    background-color: rgba(0, 0, 139, 0.9);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ADD8E6;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 139, 0.9);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .admin-section h2 {
+        font-size: 1.5em;
+    }
+
+    #login-container h1 {
+        font-size: 2em;
+    }
+}

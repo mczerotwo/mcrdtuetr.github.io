@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCZEROTWO 管理员页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>管理员登录</h1>
+        <input type="password" id="password" placeholder="输入密码">
+        <button onclick="checkPassword()">登录</button>
+        <p id="error-message"></p>
+    </div>
+    <div id="admin-content" style="display: none;">
+        <header>
+            <h1>MCZEROTWO 管理员页面</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://mcrdtuetr.github.io">主页</a></li>
+                    <li><a href="#">资源管理</a></li>
+                    <li><a href="#">用户管理</a></li>
+                    <li><a href="#">设置</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="admin-section">
+                <h2>欢迎, 管理员</h2>
+                <p>这里是管理页面内容。</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 MCZEROTWO. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
